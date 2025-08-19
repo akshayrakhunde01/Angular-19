@@ -1,0 +1,21 @@
+<p>asignment-2 works!</p>
+<div class="box">
+    <div class="input-container">
+        <label for="">Full Name</label>
+        <input type="text" [(ngModel)]="user">
+    </div>
+    <!-- <ng-container @if (user != ''; else notValid)>
+
+    </ng-container>
+
+    <ng-template #notValid>
+        <h2> Please Enter Your Name</h2>
+    </ng-template> -->
+
+    <ng-container *ngIf=" user !== ''; else notValid"> </ng-container>
+
+<ng-template #notValid>
+  <h2>Please Enter Your Name</h2>
+</ng-template>
+
+</div>

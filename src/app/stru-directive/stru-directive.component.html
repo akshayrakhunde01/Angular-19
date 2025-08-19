@@ -1,0 +1,44 @@
+<p>stru-directive works!</p>
+<div>
+    <button (click)="showEmployee()">Show Employee</button>
+</div>
+
+@if (employee) {
+<div>
+    <h1>List Of All Employee</h1>
+
+    <table >
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Name</th>
+                <th>Role</th>
+            </tr>
+        </thead>
+        <tbody>
+            @for(emp of employees(); track emp.id){
+                @if(emp.role!=='developer'){
+                <tr>
+                    <td>{{emp.id}}</td>
+                    <td>{{emp.name}}</td>
+                    <td>{{emp.role}}</td>
+                </tr>
+                }
+            }
+        </tbody>
+    </table>
+
+
+</div>
+}
+
+<div [ngSwitch]="age">
+    <h1>Switch cases data</h1>
+    <p *ngSwitchCase="10">The person age is 10</p>
+    <p *ngSwitchCase="20">The person age is 20</p>
+    <p *ngSwitchCase="30">The person age is 30</p>
+    <p *ngSwitchCase="40">The person age is 40</p>
+    <p *ngSwitchDefault>The person age is {{age}}</p>
+</div>
+
+

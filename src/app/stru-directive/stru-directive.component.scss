@@ -1,0 +1,35 @@
+table {
+  width: 50%;
+  border-collapse: collapse;
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+
+  thead {
+    background-color: #7a9386;
+
+    th {
+      text-align: center;
+      padding: 12px;
+      border-bottom: 2px solid #862b2b;
+    }
+  }
+
+  tbody {
+    tr {
+      border-bottom: 1px solid #eee;
+         background-color: #b6ced7;
+    //   &:nth-child(even) {
+    //     background-color: #fafafa;
+    //   }
+
+    //   &:hover {
+    //     background-color: #f1f1f1;
+    //   }
+
+      td {
+        text-align: center;
+        padding: 10px 12px;
+      }
+    }
+  }
+}

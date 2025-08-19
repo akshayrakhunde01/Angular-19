@@ -1,0 +1,21 @@
+
+<div class="body">
+<form action="" >
+    <h1>Submit From</h1>
+    <div class="form-group">
+        <label for="name">Name</label>
+        <input type="text" name="name" [(ngModel)]="nm" [ngStyle]=" {'background-color':nm ? 'lightgreen':'yellow'}" required />
+    </div>
+    <div class="form-group">
+        <label for="email" >Email</label>
+        <input type="email" name="email" [(ngModel)]="em" 
+        [ngStyle]="{'background-color': isEmail ? 'lightgreen' : 'yellow'}"
+        (input)="checkInputValidation(em)" required />
+    </div>
+    <button type="submit" (click)="formSubmited(); ">Submit</button>
+</form>
+<p *ngIf="isFormSubmited" class="success-message show">
+  Form Is Submitted Successfully ✅
+</p>
+
+</div>

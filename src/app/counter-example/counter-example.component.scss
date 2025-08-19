@@ -1,0 +1,44 @@
+.conatiner{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    border: 5px solid rgb(30, 121, 43);
+    border-radius: 5px;
+    width: 400px;
+    padding: 20px;
+    margin: 20px auto;
+    background-color: black;
+    color: white;
+
+}
+h1{
+    text-align: center;
+    font-size: 35px;
+}
+.btn-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+    
+}
+.button{
+    padding: 15px 20px;
+    margin: 10px;
+    background-color: black;
+    border: none;
+    font-size: 18px;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: green !important;
+    color: white;
+}
+.para{
+    font-weight: 10px;
+    background-color: black;
+    margin-left: 10px;
+    margin-right: 10px;
+
+}

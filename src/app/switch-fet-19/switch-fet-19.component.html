@@ -1,0 +1,53 @@
+<p>switch-fet-19 works!</p>
+
+<div>
+  <h1>Role Selection</h1>
+
+  <select [(ngModel)]="employeeRole" id="roleSelect">
+    <option value="" >Select Role</option>
+    @for (role of roles; track $index) {
+      <option [value]="role">{{ role }}</option>
+    }
+  </select>
+
+  
+  @if (employeeRole) {
+    <h1>Selected Role: {{ employeeRole | titlecase }}</h1>
+
+    <h2>List of Employees</h2>
+    <table border="2" cellpadding="2">
+      <thead>
+        <tr>
+          <th>Id</th>
+          <th>Name</th>
+          <th>Role</th>
+        </tr>
+      </thead>
+      <tbody>
+        @for (emp of empData(); track emp.id) {
+          @if (emp.role === employeeRole) {
+            <tr [style.background-color]="emp.role === 'hr' ? '#e0f0ff' : 'gray'">
+              <td>{{ emp.id }}</td>
+              <td>{{ emp.name }}</td>
+              <td>{{ emp.role }}</td>
+            </tr>
+          }
+        }
+      </tbody>
+    </table>
+  }
+</div>
+
+<div class="eligibility">
+  <h1>Check Eligibility</h1>
+  <input type="text" placeholder="Enter The Value" (input)="checkEligibility()" [(ngModel)] ='age'>
+  <br>
+  
+  <div  [ngSwitch]="isEligible">
+    <h1>
+    <p *ngSwitchCase="true" > Your Eligible</p>
+    <p *ngSwitchCase="false">Your Not Eligible</p>
+    </h1>
+  </div>
+
+</div>
