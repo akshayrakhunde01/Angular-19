@@ -10,10 +10,11 @@ import { NgOnChnagesHookComponent } from './ng-on-chnages-hook/ng-on-chnages-hoo
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss'],
-  imports: [TwoWayBindingComponent,StruDirectiveComponent,
-    SwitchFet19Component,Asignment1Component,
-    Asignment2Component,
-    SmallPortfolioComponent,
+  imports: [
+    // TwoWayBindingComponent,StruDirectiveComponent,
+    // SwitchFet19Component,Asignment1Component,
+    // Asignment2Component,
+    // SmallPortfolioComponent,
     NgOnChnagesHookComponent
   ]
 })

@@ -1,5 +1,6 @@
-<p>ng-on-chnages-hook works!</p>
-<div>
-    <label for="name">Name</label>
-    <input type="text" name="name" id="name" [(ngModel)]="inputValue"/>
-</div>
+<h2>Parent component</h2>
+<button (click)="onClick()" 
+style="width: 100px; height: 50px;
+background-color: rgb(139, 139, 196); cursor: pointer;"
+ >Button</button>
+<app-chaild-compnent [inputValue]="inputValue"></app-chaild-compnent>
