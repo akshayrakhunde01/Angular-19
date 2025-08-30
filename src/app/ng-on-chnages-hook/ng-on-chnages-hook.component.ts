@@ -9,7 +9,7 @@ import { ChaildCompnentComponent } from './chaild-compnent/chaild-compnent.compo
   styleUrl: './ng-on-chnages-hook.component.scss'
 })
 export class NgOnChnagesHookComponent {
-  inputValue:string = 'Initial Time';
+  inputValue:string = 'Initial Timee';
   // constructor(){
   //   console.log(`calling from the constructor ${this.inputValue}`)
   // }
