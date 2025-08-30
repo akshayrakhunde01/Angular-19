@@ -15,6 +15,6 @@ export class NgOnChnagesHookComponent {
   // }
 
   onClick(){
-    this.inputValue=' updatedValue ' + new Date().toLocaleTimeString()
+    this.inputValue= 'updatedValue ' + new Date().toLocaleTimeString()
   }
 }
